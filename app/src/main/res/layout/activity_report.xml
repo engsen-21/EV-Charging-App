@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_general_back"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Charging Station"
+                android:textSize="23sp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Address Name"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/addressNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address Name"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/usageRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/publicChargerRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public Charger" />
+
+            <RadioButton
+                android:id="@+id/homeChargerRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Charger" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charger Type"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner_charger_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="Charger Type"
+            android:entries="@array/report_charger_type" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_upload_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"
+            android:inputType="text"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/submitReportButton"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Report"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_design"/>
+
+    </LinearLayout>
+</ScrollView>

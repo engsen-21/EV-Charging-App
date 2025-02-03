@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search_view"
+        android:layout_marginTop="6dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/filter_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/autocomplete_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:id="@+id/btn_filter_level_1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:text="Level 1"
+            android:background="@drawable/filter_bg_selection"/>
+
+        <Button
+            android:id="@+id/btn_filter_level_2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Level 2"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/filter_bg_selection"/>
+
+        <Button
+            android:id="@+id/btn_filter_level_3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:text="Level 3"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/filter_bg_selection"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_renting"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Rent"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:background="@drawable/filter_bg_selection"/>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_current_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_currentlocation"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigator"
+        app:itemIconTint="#004aad"
+        app:itemTextColor="#004aad"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

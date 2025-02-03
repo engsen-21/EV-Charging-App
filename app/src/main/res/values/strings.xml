@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Smart Charge</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_web_client_id">506871627136-0aph1nuha5gv4sdmrq1hic8stdaa0bqf.apps.googleusercontent.com</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key">AIzaSyDfe_eOyIYxJwWoZHXMoSfIgLxjMUhAjPw</string>
+
+    <string-array name="charger_type_array">
+        <item>Level 1</item>
+        <item>Level 2</item>
+    </string-array>
+
+    <string-array name="brand_model_array">
+        <item>ABB Terra AC Wallbox</item>
+        <item>ChargePoint Home Flex</item>
+        <item>Wallbox Pulsar Plus</item>
+    </string-array>
+
+    <string-array name="power_rating_array">
+        <item>3.3 kW (Level 1)</item>
+        <item>7.2 kW (Level 2)</item>
+        <item>11 kW (Level 2)</item>
+    </string-array>
+
+    <string-array name="connector_type_array">
+        <item>Type 2 (AC)</item>
+        <item>CCS (Combined Charging System)</item>
+    </string-array>
+
+    <string-array name="availability_array">
+        <item>24/7</item>
+        <item>8 AM - 6 PM</item>
+        <item>Weekends only</item>
+    </string-array>
+
+    <string-array name="price_per_unit_array">
+        <item>1 MYR/kWh</item>
+        <item>2 MYR/kWh</item>
+    </string-array>
+
+    <string-array name="report_charger_type">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+    </string-array>
+</resources>

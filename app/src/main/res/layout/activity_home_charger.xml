@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeChargerActivity"
+    android:orientation="vertical"
+    android:background="#DACDCD"
+    android:paddingHorizontal="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_general_back"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent Home Charger"
+        android:textSize="25sp"
+        android:layout_marginLeft="38dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Address"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_home_address"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/input_bg"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charger Type"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spinner_charger_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:hint="Charger Type"
+                android:entries="@array/charger_type_array" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand Model"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner_brand_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand and Model"
+                android:paddingLeft="10dp"
+                android:entries="@array/brand_model_array" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Power Rating (kW)"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner_power_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Power Rating (kW)"
+                android:paddingLeft="10dp"
+                android:entries="@array/power_rating_array" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connector Type"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner_connector_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Connector Type"
+                android:paddingLeft="10dp"
+                android:entries="@array/connector_type_array" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Availability"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner_availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Availability"
+                android:paddingLeft="10dp"
+                android:entries="@array/availability_array" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_latitude"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/input_bg"
+                android:paddingLeft="15dp"
+                android:hint="3.######"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_warning"
+                    android:paddingLeft="12dp"
+                    app:tint="#FF0000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please double check latitude decimal value
+                    Google Map > Drop Pin > latitude,longitude"
+                    android:textSize="12.5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/input_bg"
+                android:paddingLeft="15dp"
+                android:hint="101.######"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_warning"
+                    android:paddingLeft="12dp"
+                    app:tint="#FF0000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please double check longitude decimal value"
+                    android:textSize="12.5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Per Unit (MYR)"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinner_price_per_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price per Unit (MYR)"
+                android:paddingLeft="10dp"
+                android:entries="@array/price_per_unit_array" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proof of Ownership or Lease Agreement (PDF)"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_upload_ownership_proof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload PDF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Charger Installation Certificate (PDF)"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_upload_installation_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload PDF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Photographs of Installed Charger"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_upload_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo" />
+
+            <Button
+                android:id="@+id/btn_submit_charger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_design"
+                android:onClick="SubmitHomeCharger"
+                android:layout_marginTop="15dp"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

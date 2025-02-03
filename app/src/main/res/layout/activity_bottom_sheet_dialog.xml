@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#DACDCD"
+    tools:context=".BottomSheetDialog">
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_smart_charge"/>
+
+    <TextView
+        android:id="@+id/station_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MRANTI Park"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/address_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MRANTI Technology Park, Bukit Jalil"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/availability_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Currently Available"
+            android:textColor="#0F9D58"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.2KM"
+            android:textColor="#0F9D58"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/quantity_plug_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_quantity"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/quantity_plug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 3 Chargers"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/full_address_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_location"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/full_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rumah Usahawan 4, Taman Teknologi Malaysia, 43300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/charging_type_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_plugtype"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/charging_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type 2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/cost_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_cost"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/charging_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM0.54/kWh"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/navigation_icon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_bg_design"
+        android:text="Navigate  >"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="end" />
+
+</LinearLayout>

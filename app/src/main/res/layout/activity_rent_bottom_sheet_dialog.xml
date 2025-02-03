@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RentBottomSheetDialog">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/charger_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_smart_charge" />
+
+        <TextView
+            android:id="@+id/verified_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified"
+            android:textColor="#00FF00"
+            android:padding="4dp"
+            android:layout_gravity="end|top"
+            android:layout_margin="8dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Address : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/home_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Phone Number : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/owner_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Phone Number"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charger Type : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/charger_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charger Type"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Model : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/brand_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand Model"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Rating : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/power_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Rating"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connector Type : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/connector_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connector Type"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availability"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Per Unit : "
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/price_per_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Per Unit"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/navigation_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:text="Navigate  >"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "506871627136",
+    "project_id": "smartcharge-project",
+    "storage_bucket": "smartcharge-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506871627136:android:120bcc0f10ea3335a55565",
+        "android_client_info": {
+          "package_name": "smartcharge.master"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506871627136-0aph1nuha5gv4sdmrq1hic8stdaa0bqf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "smartcharge.master",
+            "certificate_hash": "51fa56b667caf0e0c4880ee5b85a2827ea16ad5e"
+          }
+        },
+        {
+          "client_id": "506871627136-iif7mqmlnkkeb73jf00dn7btdk0td1t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOuTw2jeOhONnaAO_mkq_QHXF3zcUa1MU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506871627136-iif7mqmlnkkeb73jf00dn7btdk0td1t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
