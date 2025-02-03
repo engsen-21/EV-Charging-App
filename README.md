@@ -50,6 +50,11 @@ The app provides **real-time access to charging stations**, and a **home charger
  cd SmartCharge
 ```
 
+### **Setup API Keys**
+To enable Google Maps and Places functionalities, you must add your own API key:
+1. Open `app/src/main/res/values/strings.xml` and replace `Replace your own API key` with your actual **Google Maps API Key**.
+2. Open `app/google-services.json` and insert your **Google Services credentials**.
+
 ### **Run the Application**
 1. Open the project in **Android Studio**.
 2. Configure the `google-services.json` file from Firebase.
