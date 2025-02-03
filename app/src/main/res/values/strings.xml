@@ -11,7 +11,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="default_web_client_id">506871627136-0aph1nuha5gv4sdmrq1hic8stdaa0bqf.apps.googleusercontent.com</string>
     <string name="title_activity_maps">MapsActivity</string>
-    <string name="google_maps_key">AIzaSyDfe_eOyIYxJwWoZHXMoSfIgLxjMUhAjPw</string>
+    <string name="google_maps_key">Replace your own API key</string>
 
     <string-array name="charger_type_array">
         <item>Level 1</item>
